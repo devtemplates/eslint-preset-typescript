@@ -1,0 +1,50 @@
+{
+  "name": "@devtemplates/eslint-preset-typescript",
+  "version": "0.0.0-development",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Opinionated Eslint configuration preset for typescript projects using standard and prettier",
+  "homepage": "https://github.com/devtemplates/eslint-preset-typescript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devtemplates/eslint-preset-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devtemplates/eslint-preset-typescript/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives .",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "6.11.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-config-standard": "17.1.0",
+    "eslint-config-standard-with-typescript": "39.1.1",
+    "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-n": "",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-tsdoc": "0.2.17"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "18.4.2",
+    "@commitlint/config-conventional": "18.4.2",
+    "@commitlint/cz-commitlint": "18.4.2",
+    "commitizen": "4.3.0",
+    "eslint": "8.53.0",
+    "husky": "8.0.3",
+    "inquirer": "8.2.6",
+    "lint-staged": "15.1.0",
+    "prettier": "3.1.0",
+    "semantic-release": "22.0.8"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.1"
+  }
+}
