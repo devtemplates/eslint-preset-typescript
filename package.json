@@ -2,7 +2,10 @@
   "name": "@devtemplates/eslint-config-typescript",
   "version": "0.0.0-development",
   "license": "MIT",
-  "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Opinionated Eslint configuration preset for typescript projects using standard and prettier",
   "homepage": "https://github.com/devtemplates/eslint-config-typescript",
   "repository": {
     "type": "git",
