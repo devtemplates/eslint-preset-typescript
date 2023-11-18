@@ -6,7 +6,7 @@ With with introduction of the [new eslint configuration format](https://eslint.o
 
 ## Usage
 
-The new eslint configuration allows for significantly easier setup.
+The new eslint configuration allows for significantly easier usage.
 
 1. Install eslint (needs to be > 8.0.0): `npm install eslint --save-dev`
 2. Install eslint-preset-typescript: `npm install @devtemplates/eslint-preset-typescript`
