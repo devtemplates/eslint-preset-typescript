@@ -1,6 +1,13 @@
 name: call_release
 on:
   workflow_call:
+    secrets:
+      NPM_TOKEN:
+        description: "NPM token"
+        required: true
+      GITHUB_TOKEN:
+        description: "GitHub token"
+        required: true
 jobs:
   release:
     runs-on: ubuntu-latest
