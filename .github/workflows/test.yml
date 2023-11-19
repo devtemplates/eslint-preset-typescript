@@ -20,6 +20,8 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm run lint
+  # NOTE: This allows us to add branch protection checking `test-results` status
+  # rather than having to explicitly define each test matrix job.
   # https://github.com/orgs/community/discussions/26822#discussioncomment-5122101
   test-results:
     if: ${{ always() }}
