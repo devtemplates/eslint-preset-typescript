@@ -2,8 +2,8 @@
 
 [![CI][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![javascript style guide][standard-image]][standard-url]
 
-[ci-image]: https://github.com/devtemplates/eslint-preset-typescript/actions/workflows/release.yml/badge.svg?branch=main
-[ci-url]: https://github.com/devtempaltes/eslint-preset-typescript/actions/workflows/release.yml
+[ci-image]: https://github.com/devtemplates/eslint-preset-typescript/actions/workflows/run_release.yml/badge.svg?branch=main
+[ci-url]: https://github.com/devtempaltes/eslint-preset-typescript/actions/workflows/run_release.yml
 [npm-image]: https://img.shields.io/npm/v/@devtemplates/eslint-preset-typescript.svg
 [npm-url]: https://npmjs.com/package/@devtemplates/eslint-preset-typescript
 [standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
