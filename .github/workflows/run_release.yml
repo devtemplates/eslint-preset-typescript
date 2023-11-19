@@ -1,0 +1,12 @@
+name: run_release
+on:
+  push:
+    branches:
+      - "main"
+      - "next"
+jobs:
+  test:
+    uses: ./.github/workflows/call_test.yml
+  release:
+    needs: [test]
+    uses: ./.github/workflows/call_release.yml
