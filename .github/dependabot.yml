@@ -1,0 +1,83 @@
+version: 2
+updates:
+  # Rules for npm dev deps (not major):
+  # - Should attempt to auto-merge if tests pass.
+  # - There should be no explicit reason we need to cut a new release for this.
+  - package-ecosystem: "npm"
+    directory: "/"
+    allow:
+      - dependency-type: "development"
+    ignore:
+      - update-types: ["version-update:semver-major"]
+    commit-message:
+      prefix: "chore"
+    schedule:
+      interval: "daily"
+    labels:
+      - auto-merge""
+  # Rules for npm dev deps (major):
+  # - This could impact build tools that introduce breaking changes and as a
+  #   result, they should be manually reviewed.
+  # - By default we will mark these with a feature label as it may change the
+  #   way we build the project. It will be up to the PR to determine if
+  #   BREAKING CHANGE should be added to the commit.
+  - package-ecosystem: "npm"
+    directory: "/"
+    allow:
+      - dependency-type: "development"
+    ignore:
+      - update-types:
+          ["version-update:semver-minor", "version-update:semver-patch"]
+    commit-message:
+      prefix: "feat"
+    schedule:
+      interval: "daily"
+  # Rules for npm deps (patch).
+  # - By default, we will mirror the update type of the dependency.
+  # - It should be fine to auto-merge these as they should not introduce
+  #   breaking changes.
+  - package-ecosystem: "npm"
+    directory: "/"
+    allow:
+      - dependency-type: "production"
+    ignore:
+      - update-types:
+          ["version-update:semver-major", "version-update:semver-minor"]
+    commit-message:
+      prefix: "fix"
+    schedule:
+      interval: "daily"
+    labels:
+      - auto-merge""
+  # Rules for npm deps (minor).
+  # - By default, we will mirror the update type of the dependency.
+  # - It should be fine to auto-merge these as they should not introduce
+  #   breaking changes.
+  - package-ecosystem: "npm"
+    directory: "/"
+    allow:
+      - dependency-type: "production"
+    ignore:
+      - update-types:
+          ["version-update:semver-major", "version-update:semver-patch"]
+    commit-message:
+      prefix: "feat"
+    schedule:
+      interval: "daily"
+    labels:
+      - auto-merge""
+  # Rules for npm deps (major).
+  # - By default, we will mirror the update type of the dependency.
+  # - DO NOT AUTO-MERGE. This could introduce breaking changes and should be
+  #   manually reviewed.
+  - package-ecosystem: "npm"
+    directory: "/"
+    allow:
+      - dependency-type: "production"
+    ignore:
+      - update-types:
+          ["version-update:semver-minor", "version-update:semver-patch"]
+    commit-message:
+      prefix: "feat"
+    schedule:
+      interval: "daily"

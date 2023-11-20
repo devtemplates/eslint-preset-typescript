@@ -1,0 +1,11 @@
+name: auto-merge
+on:
+  pull_request:
+    branches:
+      - "main"
+jobs:
+  auto-merge:
+    permissions:
+      contents: write
+      pull-requests: write
+    uses: ./.github/workflows/call_auto-merge.yml

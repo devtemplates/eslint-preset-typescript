@@ -1,0 +1,14 @@
+name: call_auto-merge
+on:
+  workflow_call:
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Enable auto-merge
+        if: contains(github.event.pull_request.labels.*.name, 'auto-merge')
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
