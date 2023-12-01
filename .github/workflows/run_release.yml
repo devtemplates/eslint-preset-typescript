@@ -5,7 +5,7 @@ on:
       - "main"
 jobs:
   test:
-    uses: ./.github/workflows/call_test.yml
+    uses: devtemplates/github/.github/workflows/call_test.yml@test-v1
   release:
     needs: [test]
     permissions:
