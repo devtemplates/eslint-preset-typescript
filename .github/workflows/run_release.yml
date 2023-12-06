@@ -6,13 +6,26 @@ on:
 jobs:
   test:
     uses: devtemplates/github/.github/workflows/call_test.yml@test-v1
-  release:
-    needs: [test]
+  release-please:
+    runs-on: ubuntu-latest
     permissions:
-      contents: write # to be able to publish a GitHub release
-      issues: write # to be able to comment on released issues
-      pull-requests: write # to be able to comment on released pull requests
-      id-token: write # to enable use of OIDC for npm provenance
-    secrets:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-    uses: ./.github/workflows/call_release.yml
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Release
+        uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
+          release-type: node
+      - name: Checkout
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v3
+      - name: Use Node.js
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-node@v3
+      - name: Publish
+        if: ${{ steps.release.outputs.release_created }}
+        run: npm publish
+        env:
+          NPM_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
