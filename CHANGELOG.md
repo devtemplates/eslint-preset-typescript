@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.4](https://github.com/devtemplates/eslint-preset-typescript/compare/v1.4.3...v1.4.4) (2023-12-06)
+
+
+### Bug Fixes
+
+* ensure npm authentication is corrrect in publish step ([#40](https://github.com/devtemplates/eslint-preset-typescript/issues/40)) ([0bcc87f](https://github.com/devtemplates/eslint-preset-typescript/commit/0bcc87fcb5ca0d2551cca5ff54a53e0e56c6aa2c))
+
 ## [1.4.3](https://github.com/devtemplates/eslint-preset-typescript/compare/v1.4.2...v1.4.3) (2023-12-06)
 
 
