@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.3](https://github.com/devtemplates/eslint-preset-typescript/compare/v1.4.2...v1.4.3) (2023-12-06)
+
+
+### Bug Fixes
+
+* ensure deps are installed prior to calling publish ([#38](https://github.com/devtemplates/eslint-preset-typescript/issues/38)) ([32e1a67](https://github.com/devtemplates/eslint-preset-typescript/commit/32e1a673a2b51ea6ad65f8b36d2d492bd969399d))
+
 ## [1.4.2](https://github.com/devtemplates/eslint-preset-typescript/compare/v1.4.1...v1.4.2) (2023-12-06)
 
 
