@@ -30,6 +30,8 @@ const ALL_FILES = [...JS_FILES, ...TS_FILES];
 // NOTE: eslint-config-standard has been updated but HAS NOT be published yet
 // and there is currently no way to fetch the new config so we will manually
 // grab/recreate relevant props.
+// NOTE: More information regarding eslint-config-standard and with-typescript:
+// https://github.com/standard/standard/issues/1948
 const newEslintConfigStandard = {
   languageOptions: {
     ecmaVersion: 2022,
