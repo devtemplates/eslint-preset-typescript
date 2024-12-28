@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.6.0](https://github.com/devtemplates/eslint-preset-typescript/compare/v1.5.0...v1.6.0) (2024-12-28)
+
+
+### Features
+
+* **deps:** update dependency eslint-plugin-import to v2.30.0 ([0b53044](https://github.com/devtemplates/eslint-preset-typescript/commit/0b5304468dcdaa1bc1c708422669c9a66f0410e5))
+* **deps:** update dependency eslint-plugin-import to v2.31.0 ([5cf6cff](https://github.com/devtemplates/eslint-preset-typescript/commit/5cf6cff422dd123d0a57fe9df6cdfa5af3c2aa0e))
+* **deps:** update dependency eslint-plugin-tsdoc to v0.4.0 ([#116](https://github.com/devtemplates/eslint-preset-typescript/issues/116)) ([0abfa4a](https://github.com/devtemplates/eslint-preset-typescript/commit/0abfa4a0cd117dc58e8356af129f3fc879cf0a99))
+
 ## [1.5.0](https://github.com/devtemplates/eslint-preset-typescript/compare/v1.4.4...v1.5.0) (2024-01-01)
 
 
