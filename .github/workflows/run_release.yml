@@ -21,7 +21,7 @@ jobs:
           release-type: node
       - name: Checkout
         if: ${{ steps.release.outputs.release_created }}
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       # NOTE: the setup-node action will autoamtically create a .npmrc file
       # using the token provided in the NODE_AUTH_TOKEN environment variable.
       # https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages#publishing-packages-to-the-npm-registry
