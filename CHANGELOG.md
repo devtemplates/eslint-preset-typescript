@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.6.0](https://github.com/devtemplates/eslint-preset-typescript/compare/v1.5.0...v1.6.0) (2026-02-25)
+
+
+### Features
+
+* **deps:** update dependency eslint-plugin-import to v2.30.0 ([0b53044](https://github.com/devtemplates/eslint-preset-typescript/commit/0b5304468dcdaa1bc1c708422669c9a66f0410e5))
+* **deps:** update dependency eslint-plugin-import to v2.31.0 ([5cf6cff](https://github.com/devtemplates/eslint-preset-typescript/commit/5cf6cff422dd123d0a57fe9df6cdfa5af3c2aa0e))
+* **deps:** update dependency eslint-plugin-import to v2.32.0 ([#139](https://github.com/devtemplates/eslint-preset-typescript/issues/139)) ([ff2a893](https://github.com/devtemplates/eslint-preset-typescript/commit/ff2a893e0157d13de1787469cc9f448570c4ccca))
+* **deps:** update dependency eslint-plugin-tsdoc to v0.4.0 ([#116](https://github.com/devtemplates/eslint-preset-typescript/issues/116)) ([0abfa4a](https://github.com/devtemplates/eslint-preset-typescript/commit/0abfa4a0cd117dc58e8356af129f3fc879cf0a99))
+* **deps:** update dependency eslint-plugin-tsdoc to v0.5.0 ([#146](https://github.com/devtemplates/eslint-preset-typescript/issues/146)) ([2b90f23](https://github.com/devtemplates/eslint-preset-typescript/commit/2b90f232947b9a2c871722d8180b83aac0f4b168))
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v9.1.1 ([#143](https://github.com/devtemplates/eslint-preset-typescript/issues/143)) ([a61f26e](https://github.com/devtemplates/eslint-preset-typescript/commit/a61f26e04a18264824b7dd987424592ff0ca4fd2))
+* **deps:** update dependency eslint-config-prettier to v9.1.2 ([#144](https://github.com/devtemplates/eslint-preset-typescript/issues/144)) ([9669ec2](https://github.com/devtemplates/eslint-preset-typescript/commit/9669ec26c22dd3ffe052ac771d5839226b15abd5))
+* **deps:** update dependency eslint-plugin-tsdoc to v0.5.1 ([#155](https://github.com/devtemplates/eslint-preset-typescript/issues/155)) ([6753bf2](https://github.com/devtemplates/eslint-preset-typescript/commit/6753bf277b9b13c180f9b429b9226e66dd64e540))
+* **deps:** update dependency eslint-plugin-tsdoc to v0.5.2 ([#156](https://github.com/devtemplates/eslint-preset-typescript/issues/156)) ([5d9347e](https://github.com/devtemplates/eslint-preset-typescript/commit/5d9347e21e4d243e4211aac39e6b512f15fe7b6b))
+
 ## [1.5.0](https://github.com/devtemplates/eslint-preset-typescript/compare/v1.4.4...v1.5.0) (2024-01-01)
 
 
